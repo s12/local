@@ -2,6 +2,9 @@ name = Local
 description = Local on/off page SEO management interface
 package = @WhiteFoxStudios
 core = 7.x
+files[] = local.module
+files[] = inc/local.admin.inc
+files[] = inc/local.block.inc
 dependencies[]=geocoder
 dependencies[]=geophp
 dependencies[]=address_field
@@ -14,7 +17,7 @@ dependencies[]=apc
 dependencies[]=xautoload
 dependencies[]=fast404
 dependencies[]=search404
-dependencies[]=fieldsql_norevisions
+dependencies[]=field_sql_norevisions
 dependencies[]=alinks
 dependencies[]=advagg
 dependencies[]=advagg_css_compress
@@ -47,5 +50,7 @@ dependencies[]=pathauto_persist
 dependencies[]=subpathauto
 dependencies[]=token
 dependencies[]=token_filter
+dependencies[]=entitycache
+dependencies[]=entityconnect
 
-#This project is hosted on github
+#This project is hosted on github https://github.com/s12/local.git

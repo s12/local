@@ -1,0 +1,4 @@
+<?php
+
+module_load_include("inc", "local", "inc/local.variables.inc");
+
