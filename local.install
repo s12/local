@@ -4,7 +4,7 @@
  * Make sure we can get to our array of variables.
  */
 if(!module_exists("local")){
-  module_load_include("inc", "local", "inc/local.variables.inc");
+  module_load_include("inc", "local", "inc/local.vars");
 }
 
 /**
