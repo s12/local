@@ -130,7 +130,9 @@ function local_variables_get_keys(){
 function local_variables_flush(){
   $vars = local_variables_get_keys();
 
-  foreach($vars as $i => $var){
-    variable_del($var);
+  foreach($vars as $var){
+    if(!variable_get($var, FALSE) == FALSE){
+      variable_del($var);
+    }
   }
 }
